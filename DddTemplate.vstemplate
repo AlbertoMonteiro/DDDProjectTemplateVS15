@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>DDD Project Template</Name>
+    <Description>DDD Project template</Description>
+    <Icon>__TemplateIcon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <CreateNewFolder>true</CreateNewFolder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="1 - Presentation">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Web">DddTemplate.Web\MyTemplate.vstemplate</ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="2 - Application">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Application">DddTemplate.Application\MyTemplate.vstemplate</ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="3 - Core">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Core">DddTemplate.Core\MyTemplate.vstemplate</ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="4 - Infra">
+        <SolutionFolder Name="4.1 - Data">
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Data">DddTemplate.Data\MyTemplate.vstemplate</ProjectTemplateLink>
+        </SolutionFolder>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

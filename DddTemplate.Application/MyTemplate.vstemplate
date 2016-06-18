@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DddTemplate.Application</Name>
+    <Description>No description available</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DddTemplate.Application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="DddTemplate.Application.csproj" ReplaceParameters="true">
+      <Folder Name="Interfaces" TargetFolderName="Interfaces" />
+      <Folder Name="Mapeamentos" TargetFolderName="Mapeamentos">
+        <ProjectItem ReplaceParameters="true">AutoMapperBootstrap.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <Folder Name="Servicos" TargetFolderName="Servicos" />
+    </Project>
+  </TemplateContent>
+</VSTemplate>

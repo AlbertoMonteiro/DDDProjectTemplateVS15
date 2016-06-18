@@ -1,0 +1,25 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DddTemplate.Data</Name>
+    <Description>No description available</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DddTemplate.Data</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="DddTemplate.Data.csproj" ReplaceParameters="true">
+      <Folder Name="Migrations">
+        <ProjectItem ReplaceParameters="true">Configuration.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true">packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">ProjectContext.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
